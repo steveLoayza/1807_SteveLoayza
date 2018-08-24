@@ -10,7 +10,7 @@ exports.config = {
        browserName: 'chrome'
      },
      var:reporter = new HtmlReporter({
-        baseDirectory: 'angularApp/',
+        baseDirectory: 'angularApp/dist/',
         docName: 'report.html'
      }),
    onPrepare: function() {
