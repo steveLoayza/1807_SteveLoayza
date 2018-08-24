@@ -1,0 +1,14 @@
+<div *ngIf="test">
+  <h2>{{test.name | uppercase}} Details</h2>
+  <div><span>id: </span>{{test.id}}</div>
+  <div>
+    <!-- <label>name:
+      <input [(ngModel)]="test.name" placeholder="name"/>
+    </label> -->
+    <button (click)="goBack()">go back</button>
+  <!-- <button (click)="save()">save</button> -->
+    <a target="_blank" href="test-detail/report/report.html">Protractor Tests</a>
+
+  </div>
+  
+</div>

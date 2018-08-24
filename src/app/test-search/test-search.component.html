@@ -1,0 +1,13 @@
+<div id="search-component">
+  <h4>Test Search</h4>
+
+  <input #searchBox id="search-box" (keyup)="search(searchBox.value)" />
+
+  <ul class="search-result">
+    <li *ngFor="let test of tests$ | async" >
+      <a routerLink="/detail/{{test.id}}">
+        {{test.name}}
+      </a>
+    </li>
+  </ul>
+</div>

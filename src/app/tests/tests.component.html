@@ -1,0 +1,21 @@
+<h2>Tests</h2>
+
+<div>
+  <label>Test name:
+    <input #testName />
+  </label>
+  <!-- (click) passes input value to add() and then clears the input -->
+  <!-- <button (click)="add(testName.value); testName.value=''">
+    add
+  </button> -->
+</div>
+
+<ul class="tests">
+  <li *ngFor="let test of tests">
+    <a routerLink="/detail/{{test.id}}">
+      <span class="badge">{{test.id}}</span> {{test.name}}
+    </a>
+    <button class="delete" title="delete test"
+      (click)="delete(test)">x</button>
+  </li>
+</ul>
